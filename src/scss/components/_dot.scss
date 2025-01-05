@@ -1,0 +1,25 @@
+.dot {
+    position: absolute;
+    top: 50%;
+    left: -38px;
+    transform: translate(0, -50%);
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid var(--color-primary);
+    transition: 0.3s;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 20px;
+        height: 3px;
+        background-color: var(--color-primary);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 14px;
+        transition: 0.3s;
+    }
+}

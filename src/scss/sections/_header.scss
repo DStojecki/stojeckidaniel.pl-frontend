@@ -1,0 +1,204 @@
+.header {
+    position: relative;
+    background-color: #fff;
+
+    &__background {
+        height: 800px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        // background-image: url("@/assets/hero-desktop.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: 0;
+        overflow: hidden;
+
+        @media (max-width: 1900px) {
+            background-size: contain;
+        }
+        @media (max-width: 1000px) {
+            height: 750px;
+        }
+
+        img {
+            position: absolute;
+            z-index: -1;
+
+            &.shades-1 {
+                bottom: 0;
+                right: 0;
+            }
+            &.shades-2 {
+                top: 0;
+                left: 0%;
+            }
+            &.shades-3 {
+                bottom: -40px;
+                right: 0px;
+            }
+            &.shades-4 {
+                bottom: -40px;
+                left: 0;
+            }
+        }
+    }
+
+    &__title {
+        text-align: center;
+        font-size: 45px;
+        margin-top: 50px;
+        font-weight: 500;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+        padding: 0px 25px;
+
+        @media (max-width: 1000px) {
+            font-size: 40px;
+            margin-top: 30px;
+        }
+        @media (max-width: 800px) {
+            font-size: 35px;
+        }
+        @media (max-width: 430px) {
+            font-size: 28px;
+            padding: 0 5px;
+        }
+
+        span {
+            color: var(--color-secondary);
+            font-weight: 700;
+        }
+    }
+
+    p {
+        text-align: center;
+        width: 700px;
+        margin: 15px auto 50px;
+        padding: 0px 25px;
+        font-size: 16px;
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        opacity: 0;
+
+        @media (max-width: 1000px) {
+            font-size: 14px;
+            margin: 15px auto 40px;
+            width: 100%;
+        }
+
+        span {
+            color: var(--color-secondary);
+            font-weight: 700;
+        }
+    }
+
+    img.shade {
+        position: absolute;
+        z-index: 0;
+    }
+
+    .shade-1 {
+        left: 0;
+        top: 0;
+    }
+    .shade-2 {
+        right: 0;
+        top: 0;
+    }
+    .shade-3 {
+        right: 0;
+        bottom: 0;
+    }
+    .shade-4 {
+        left: 0;
+        bottom: 0;
+    }
+    .shade-5 {
+        top: 62%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    nav {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 15px 0;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 5;
+
+        @media (max-width: 1300px) {
+            width: 100%;
+            padding: 15px 40px;
+        }
+
+        .logo {
+            width: 250px;
+            margin-top: 8px;
+            svg {
+                max-width: 100%;
+                max-height: 100%;
+            }
+        }
+
+        .rightpanel {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                @media (max-width: 600px) {
+                    display: none;
+                }
+            }
+
+            .burger {
+                display: none;
+                margin: 10px 0px 10px 35px;
+
+                @media (max-width: 1150px) {
+                    display: block;
+
+                    .bar {
+                        width: 40px;
+                        height: 3px;
+                        background-color: #fff;
+                        margin: 8px 0;
+                        transition: 0.4s;
+                    }
+                }
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                gap: 35px;
+
+                @media (max-width: 1150px) {
+                    display: none;
+                }
+
+                li a {
+                    color: #fff;
+                    font-weight: 600;
+
+                    &:hover {
+                        color: var(--color-secondary);
+                    }
+                }
+            }
+
+            img,
+            button {
+                align-self: center;
+                margin-left: 30px;
+            }
+        }
+    }
+}
