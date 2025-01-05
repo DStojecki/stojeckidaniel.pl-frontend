@@ -15,7 +15,7 @@
                 <p>
                     I am a software developer with over 4 years of experience in the IT industry. I started my career as a frontend specialist, focusing on creating intuitive and visually appealing
                     user interfaces. Now, I am expanding my skill set by diving into backend development, learning server-side technologies and database management. My goal is to become a versatile
-                    developer who seamlessly integrates frontend and backend expertise to deliver comprehensive software solutions. <br /><br />
+                    developer, who seamlessly integrates frontend and backend expertise to deliver comprehensive software solutions. <br /><br />
                 </p>
                 <button class="btn btn-secondary">Download CV</button>
             </div>
